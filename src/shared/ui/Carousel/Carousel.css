@@ -1,0 +1,62 @@
+/* Swiper Container */
+.swiper {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Slide Styling */
+.swiper-slide {
+  text-align: center;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.02);
+}
+
+/* Slide Image Styling */
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* Can change to 12px if you want rounded images */
+}
+
+/* Pagination Bullets */
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.7;
+  border-radius: 50%;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.swiper-pagination-bullet:hover {
+  background: #007aff;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Active Pagination Bullet */
+.swiper-pagination-bullet-active {
+  background: #007aff;
+  opacity: 1;
+}
